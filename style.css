@@ -1,0 +1,243 @@
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.important {
+  color: darkblue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#interesting {
+  font-weight: bold;
+  color: black;
+}
+
+#interesting:hover {
+  color: orangered;
+}
+
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+h1:hover {
+  color: red;
+}
+
+h2:hover {
+  color: red;
+}
+
+h3:hover {
+  color: red;
+}
+
+p:hover {
+  color: red;
+}
+
+a:hover {
+  color: red;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+}
+
+ul li {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 14px 16px;
+  text-align: left;
+  float: left;
+}
+
+button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  padding: 2% 0;
+  text-align: center;
+  width: 90%;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.navbar li {
+  float: left;
+  margin: 0;
+  padding-top: 0.5%;
+}
+
+#theme-button {
+  text-decoration: dashed;
+  color: #0D38D3;
+  padding: 4%;
+  margin: 4%;
+  border: 10px blue;
+  border-width: 1cm;
+  background-color: red;
+}
+
+#petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+#scholars-institute {
+  width: 55%;
+  padding-right: 10px;
+}
+
+#signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+
+.error {
+  border: 2px solid red;
+  background-color: pink;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightblue;
+  text-align: center;
+  text-decoration: mediumvioletred;
+}
+
+.petition-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.petition-para {
+    width: 55%;
+    padding-right: 10px;
+}
+
+.signatures {
+    width: 45%;
+    padding-right: 10px;
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.navbar {
+  /* Other navbar styles */
+  position: fixed;
+  z-index: 1000; /* Adjust the value as needed */
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.modal-content {
+  background-color: lightsteelblue; 
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#thanks-modal-content {
+  width: 20rem; 
+}
+
+#modal-text-container {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close-button {
+  padding: 4%;
+  margin: 4%;
+  border-width: 1cm;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.modal-close-button:hover {
+  background-color: red;
+}
